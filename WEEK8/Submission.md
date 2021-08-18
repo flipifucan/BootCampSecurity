@@ -51,10 +51,6 @@ I would put this on layer 7 as an application.
 
 ![root](IMAGE/yahoo.png)
 
-![root](IMAGE/etc.png)
-
-![root](IMAGE/Foundfile.png)
-
 ![root](IMAGE/nanohosts.png)
 
 ![root](IMAGE/nanopacketinfo.png)

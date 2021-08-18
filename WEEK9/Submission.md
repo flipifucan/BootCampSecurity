@@ -1,91 +1,198 @@
-1.	I copied the IP’s to a text file and ran them in this fping < fping.txt and got the results below.
-
-sysadmin@UbuntuDesktop:~/Desktop$ fping < fping.txt 
-<br>
-167.172.144.11 is alive
-<br>
-15.199.151.91 is unreachable
-<br>
-15.199.158.91 is unreachable
-15.199.141.91 is unreachable
-15.199.131.91 is unreachable
-15.199.121.91 is unreachable
-15.199.111.91 is unreachable
-15.199.100.91 is unreachable
-15.199.99.91 is unreachable
-15.199.98.91 is unreachable
-15.199.97.91 is unreachable
-15.199.96.91 is unreachable
-15.199.95.91 is unreachable
-15.199.94.91 is unreachable
-11.199.158.91 is unreachable
-11.199.141.91 is unreachable
-11.199.131.91 is unreachable
-11.199.121.91 is unreachable
-11.199.111.91 is unreachable
-11.199.100.91 is unreachable
-11.199.99.91 is unreachable
-11.199.98.91 is unreachable
-
-I believe that Layer 3 the network layer would be at risk. This is where the IP and routing lives.
-
-![fping](IMAGE/fping.png)
-
-<br>
-
-2.  Port 22/TCP is open. This would be done on layer 4 transport. First part of a 3 way hand shake to establish connection. Putting a firewall to protect this port would be nice. 
+Mission 1
+Issue: Due to the DoS attack, the Empire took down the Resistance's DNS and primary email servers.
 
 
-
-![port](IMAGE/nmap.png)
-
-
-3.	sysadmin@UbuntuDesktop:~$ nslookup 98.137.246.8
-8.246.137.98.in-addr.arpa	name = unknown.yahoo.com.
-
-Authoritative answers can be found from:
-
-I would put this on layer 7 as an application. 
-
-![root](IMAGE/inasroot.png)
-
-![root](IMAGE/yahoo.png)
-
-![root](IMAGE/etc.png)
-
-![root](IMAGE/Foundfile.png)
-
-![root](IMAGE/nanohosts.png)
-
-![root](IMAGE/nanopacketinfo.png)
-
-![root](IMAGE/wireshark.png)
+The Resistance's network team was able to build and deploy a new DNS server and mail server.
 
 
-<br>
+The new primary mail server is asltx.l.google.com and the secondary should be asltx.2.google.com.
 
-I will say that this one is on layer 7. 
 
-<br>
+The Resistance (starwars.com) is able to send emails but unable to receive any.
 
-My final result I do have the blues Mr. Hacker lol.......
 
-![root](IMAGE/mrhacker.png)
+Your mission:
 
-<br>
 
-ARP result using arp filter to find mac address of rollingstone.com IP address. 
+Determine and document the mail servers for starwars.com using NSLOOKUP.
 
-<br>
+![DNS](IMAGE/starwars1.png)
 
-![root](IMAGE/arp.png)
+
+Explain why the Resistance isn't receiving any emails.
+
+    ## The asltx.l.google.com and asltx.2.l.google.com are not on the list. 
+
+
+Document what a corrected DNS record should be.
+    
+    ## starwars.com	mail exchanger = 5 aslt.l.google.com.
+    ## starwars.com	mail exchanger = 1 aslt.2.l.google.com.
+
+Mission 2
+Issue: Now that you've addressed the mail servers, all emails are coming through. However, users are still reporting that they haven't received mail from the theforce.net alert bulletins.
+
+
+Many of the alert bulletins are being blocked or going into spam folders.
+
+
+This is probably due to the fact that theforce.net changed the IP address of their mail server to 45.23.176.21 while your network was down.
+
+
+These alerts are critical to identify pending attacks from the Empire.
+
+
+Your mission:
+
+
+Determine and document the SPF for theforce.net using NSLOOKUP.
+
+![IPchange](IMAGE/ipchange.png)
+
+
+Explain why the Force's emails are going to spam.
+
+    ## They have a protocol set for the SPF1 to catch any IP's in that list.
+
+
+Document what a corrected DNS record should be.
+
+    ## Remove the IP address from the list and ket it pass. 
 
 
 
+Mission 3
+Issue: You have successfully resolved all email issues and the resistance can now receive alert bulletins. However, the Resistance is unable to easily read the details of alert bulletins online.
+
+They are supposed to be automatically redirected from their sub page of resistance.theforce.net  to theforce.net.
+
+Your mission:
+
+
+Document how a CNAME should look by viewing the CNAME of www.theforce.net using NSLOOKUP.
+
+
+Explain why the sub page of resistance.theforce.net isn't redirecting to theforce.net.
+
+
+Document what a corrected DNS record should be.
+
+
+
+Mission 4
+Issue: During the attack, it was determined that the Empire also took down the primary DNS server of princessleia.site.
+
+
+Fortunately, the DNS server for princessleia.site is backed up and functioning.
+
+
+However, the Resistance was unable to access this important site during the attacks and now they need you to prevent this from happening again.
+
+
+The Resistance's networking team provided you with a backup DNS server of: ns2.galaxybackup.com.
+
+
+Your mission:
+
+
+Confirm the DNS records for princessleia.site.
+
+
+Document how you would fix the DNS record to prevent this issue from happening again.
+
+
+
+Mission 5
+Issue: The network traffic from the planet of Batuu to the planet of  Jedha is very slow.
+
+
+You have been provided a network map with a list of planets connected between Batuu and Jedha.
+
+
+It has been determined that the slowness is due to the Empire attacking Planet N.
+
+
+Your Mission:
+
+
+View the Galaxy Network Map and determine the OSPF shortest path from Batuu to Jedha.
+
+
+Confirm your path doesn't include Planet N in its route.
+
+
+Document this shortest path so it can be used by the Resistance to develop a static route to improve the traffic.
+
+
+
+Mission 6
+Issue: Due to all these attacks, the Resistance is determined to seek revenge for the damage the Empire has caused.
+
+
+You are tasked with gathering secret information from the Dark Side network servers that can be used to launch network attacks against the Empire.
+
+
+You have captured some of the Dark Side's encrypted wireless internet traffic in the following pcap: Darkside.pcap.
+
+
+Your Mission:
+
+
+Figure out the Dark Side's secret wireless key by using Aircrack-ng.
+
+
+Hint: This is a more challenging encrypted wireless traffic using WPA.
+
+
+In order to decrypt, you will need to use a wordlist (-w) such as rockyou.txt.
 
 
 
 
-This is link I found 
-https://drive.google.com/file/d/1ic-CFFGrbruloYrWaw3PvT71elTkh3eF/view?usp=sharing
+Use the Dark Side's key to decrypt the wireless traffic in Wireshark.
 
+Hint: The format for they key to decrypt wireless is <Wireless_key>:<SSID>.
+
+
+
+Once you have decrypted the traffic, figure out the following Dark Side information:
+
+
+Host IP Addresses and MAC Addresses by looking at the decrypted ARP traffic.
+
+
+Document these IP and MAC Addresses, as the resistance will use these IP addresses to launch a retaliatory attack.
+
+
+
+
+
+Mission 7
+As a thank you for saving the galaxy, the Resistance wants to send you a secret message!
+Your Mission:
+
+
+View the DNS record from Mission #4.
+
+
+The Resistance provided you with a hidden message in the TXT record, with several steps to follow.
+
+
+Follow the steps from the TXT record.
+
+
+Note: A backup option is provided in the TXT record (as a website) in case the main telnet site is unavailable
+
+
+
+Take a screen shot of the results.
+
+
+
+Conclusion
+
+
+Submit your results and findings from every mission.
+
+
+Congratulations, you have completed your mission and saved the Galaxy!

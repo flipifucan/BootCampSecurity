@@ -16,13 +16,19 @@ The concept of defense in depth can be broken down into three different security
 
     Answer: 
     
-            these can be put in a policy for acceptable use and for the organization's security policy. managers should make all decissions and control business operations. all personal devices need to be registered with the IT team. IT admistrators have the right to the level of access for each personal device.
+            these can be put in a policy for acceptable use and for the organization's security policy. 
+            managers should make all decissions and control business operations. 
+            all personal devices need to be registered with the IT team. IT admistrators have the right to the level of access for each personal device.
 
 3. Encryption, biometric fingerprint readers, firewalls, endpoint security, and intrusion detection systems are what type of security control?
 
     Answer: 
     
-            These are things used to improve security such as software and hardware between you and the internet, like they say the weakest link is between the chair and keyboard right. So basically all these keys, readers and firewalls are used in the technical side of admistration of network management. This would need to be handled by proffesionals and highly skilled actors. 
+            These are things used to improve security such as software and hardware between you and the internet, 
+            like they say the weakest link is between the chair and keyboard right. 
+            So basically all these keys, 
+            readers and firewalls are used in the technical side of admistration of network management. 
+            This would need to be handled by proffesionals and highly skilled actors. 
 
 #### Intrusion Detection and Attack indicators
 
@@ -31,7 +37,8 @@ The concept of defense in depth can be broken down into three different security
     Answer: 
     
             IPS system will accept and reject packets based on rules and IDS systems monitors things and does not do things on it's own. 
-            IPS rquires data bases to be updated regulary and IDS needs someone human to sift thru the BS. Basically IPS is more automated and less babysitting and IDS needs to be babysat and monitored. 
+            IPS rquires data bases to be updated regulary and IDS needs someone human to sift thru the BS. 
+            Basically IPS is more automated and less babysitting and IDS needs to be babysat and monitored. 
 
 2. What's the difference between an Indicator of Attack and an Indicator of Compromise?
 
@@ -49,23 +56,31 @@ Name each of the seven stages for the Cyber Kill chain and provide a brief examp
 
 2. Stage 2: 
 
-        Weaponization: Release the zombie army. Botnets, DDOS and malware are all things you don't want or need. Time bombs and flooding my system no thanks.  
+        Weaponization: Release the zombie army. 
+        Botnets, DDOS and malware are all things you don't want or need. Time bombs and flooding my system no thanks.  
 
 3. Stage 3: 
 
-        Delivery: Close all the ports man they coming in and we don't even know it. Oh by the way I went fishing to day caught a few crappies but I was looking for the big Whale.  
+        Delivery: Close all the ports man they coming in and we don't even know it. 
+        Oh by the way I went fishing to day caught a few crappies but I was looking for the big Whale.  
 
 4. Stage 4: 
 
-        Exploitation: Once I have my foot in the door look out cause I'm going to get your passwords, add more undesirable things to your system to slow it down or even crash it. Plus I will take over a lot of commands that you really don't want me to be doing. 
+        Exploitation: Once I have my foot in the door look out cause I'm going to get your passwords, 
+        add more undesirable things to your system to slow it down or even crash it. 
+        Plus I will take over a lot of commands that you really don't want me to be doing. 
 
 5. Stage 5: 
 
-        Installation: Shut the back door or give me what I want $$$, I can do all of this remotely if ya let me. Ain't playing that bitcoin game either I want cash US crrency please. I got bills to pay. I will get around all your security and lay low. 
+        Installation: Shut the back door or give me what I want $$$, I can do all of this remotely if ya let me. 
+        Ain't playing that bitcoin game either I want cash US crrency please. I got bills to pay. 
+        I will get around all your security and lay low. 
 
 6. Stage 6: 
 
-        Command and Control: The beacons HTTP will be allowed a path to inable connectionto download e-keys to take your files. Trojan emailed then contacts server, spyware gets installed then data is stolenand leave organization. A wicked hand shake.  
+        Command and Control: The beacons HTTP will be allowed a path to inable connectionto download e-keys to take your files. 
+        Trojan emailed then contacts server, 
+        spyware gets installed then data is stolenand leave organization. A wicked hand shake.  
 
 7. Stage 7: 
 
@@ -86,7 +101,8 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820 (msg:"ET SCAN Potential VNC S
 
    Answer: 
    
-        The tcp packet alert will detect any source socket such as the port 5800:5820 like mail servers. The VNC scan is optional and can have any type of action you like.
+        The tcp packet alert will detect any source socket such as the port 5800:5820 like mail servers. 
+        The VNC scan is optional and can have any type of action you like.
 
 
 
@@ -118,13 +134,19 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
    Answer: 
    
-        classtype Policy-violation best practice is to have multiple layers of protection. Ya be careful about putting this in place to prevent thing that may not happen just to make other things being used to be slow or hard to do after you impliment a defence policy. You have to be wise as to what you put in place and balance the outcome. You don't get nothing for free building high fences only slows traffic that may be ok to get thru. 
+        classtype Policy-violation best practice is to have multiple layers of protection. 
+        Ya be careful about putting this in place to prevent thing that may not happen just to make other things being used to be slow or hard to do after you impliment a defence policy. 
+        You have to be wise as to what you put in place and balance the outcome. 
+        You don't get nothing for free building high fences only slows traffic that may be ok to get thru. 
 
 3. What kind of attack is indicated?
 
    Answer: 
    
-        ET POLICY PE EXE or DLL Windows file download HTTP. Someone downloaded files that they sholdn't have. Using wireshark to detect traffic and looking at it would help. This could be false positive or you are too late and damage is done already. Solution to this would be to tell people this is not allowed to download EXE files and to put it on the blacklist.  
+        ET POLICY PE EXE or DLL Windows file download HTTP. 
+        Someone downloaded files that they sholdn't have. 
+        Using wireshark to detect traffic and looking at it would help. This could be false positive or you are too late and damage is done already. 
+        Solution to this would be to tell people this is not allowed to download EXE files and to put it on the blacklist.  
 
 Snort Rule #3
 
@@ -423,11 +445,20 @@ Now, we will work on another lab. Before you start, complete the following revie
    Answer 1: 
    
         INTRUSION DETECTION SYSTEM
-        Signature-based detection uses a unique identifier to detect future attacks bad malware and such. Basically the network promiscuous mode. A network-base uses a NIC card to sniff packets. Much more real time monitoring watching the traffic as it goes accross the network. Not good for many machines because there will be loop holes to get around a specific machine.
+        Signature-based detection uses a unique identifier to detect future attacks bad malware and such. 
+        Basically the network promiscuous mode. 
+        A network-base uses a NIC card to sniff packets. Much more real time monitoring watching the traffic as it goes accross the network. 
+        Not good for many machines because there will be loop holes to get around a specific machine.
 
    Answer 2: 
    
-        Statistical anomaly-based detection relies on comparing anomalies to compare baselines in "good traffic". Basically the host. This monitors a single system. The IDS runs on the host try to find anomalies. Using logs it will be an after the fact monitoring situation.
+        Statistical anomaly-based detection relies 
+        on comparing anomalies to compare 
+        baselines in "good traffic". 
+        Basically the host. 
+        This monitors a single system. 
+        The IDS runs on the host try to find anomalies. 
+        Using logs it will be an after the fact monitoring situation.
 
         It don't matter which we use just know that we are looking for unusual activity, and to be able to know the difference between good and bad data
 
@@ -437,7 +468,8 @@ Now, we will work on another lab. Before you start, complete the following revie
    
             INTRUSION PREVENTION SYSTEM
             The IPS is inline direct path of source and destination.
-            The huge difference is IDS monitors, and will alert or alram you and IPS will stop it before it gets to your network
+            The huge difference is IDS monitors, 
+            and will alert or alram you and IPS will stop it before it gets to your network
             
 
 3. What type of IDS compares patterns of traffic to predefined signatures and is unable to detect Zero-Day attacks?
@@ -509,19 +541,34 @@ Now, we will work on another lab. Before you start, complete the following revie
 
     Answer:
     
-        encrypt connections HTTPS, SSL, TLS, FTPS, etc... VPN and spoofers = Spoofing your location is just another term for faking or hiding your location. This requires changing your IP address. One of the easiest ways to spoof your location is to use a VPN. This allows you to connect to a server in another country and obtain a different IP address
+        encrypt connections HTTPS, SSL, TLS, FTPS, etc... 
+        VPN and spoofers = Spoofing your location is just another term for faking or hiding your location. 
+        This requires changing your IP address. 
+        One of the easiest ways to spoof your location is to use a VPN. 
+        This allows you to connect to a server in another country and obtain a different IP address
 
 4. What technology could provide law enforcement with the ability to track and recover a stolen laptop.
 
    Answer:
    
-        Using GPS or Wi-Fi geolocation, LoJack for Laptops can map and display your laptops current and past whereabouts, so you'll know whether it's simply left behind, or something more serious. Even when your laptop is safe and sound, you can see that LoJack for Laptops is on the job.plus this is really cool Software tokens do have benefits: there is no physical token to carry, they do not contain batteries that will run out, and they are cheaper than hardware tokens.
+        Using GPS or Wi-Fi geolocation, LoJack for Laptops can map and display your laptops current and past whereabouts, 
+        so you'll know whether it's simply left behind, or something more serious. Even when your laptop is safe and sound, 
+        you can see that LoJack for Laptops is on the job.plus this is really cool Software tokens do have benefits: 
+        there is no physical token to carry, 
+        they do not contain batteries that will run out, 
+        and they are cheaper than hardware tokens.
 
 5. How could you prevent an attacker from booting a stolen laptop using an external hard drive?
 
     Answer:
     
-        Thankfully, you can protect your data against both of these types of attacks with encryption. “Encryption is a mathematical process used to jumble up data. If important files or whole devices are encrypted, there is no way to make sense of them without the key,” Mr. Stewart said. That means if thieves try to access your information, they’ll find only a jumbled mess unless they have your password, and they won’t be able to simply reset that password if the device is encrypted.Encrypting your hard drive isn’t some super-technical process that only security experts can perform, either — anyone can do it on his or her computer at home, and it should take only a few minutes to get up and running.
+        Thankfully, you can protect your data against both of these types of attacks with encryption. 
+        “Encryption is a mathematical process used to jumble up data. If important files or whole devices are encrypted, there is no way to make sense of them without the key,”. 
+        That means if thieves try to access your information, they’ll find only a jumbled mess unless they have your password, 
+        and they won’t be able to simply reset that password if the device is encrypted.
+        Encrypting your hard drive isn’t some super-technical process that only security experts can perform, 
+        either — anyone can do it on his or her computer at home, 
+        and it should take only a few minutes to get up and running.
 
 
 #### Firewall Architectures and Methodologies
@@ -530,33 +577,53 @@ Now, we will work on another lab. Before you start, complete the following revie
 
   Answer:
   
-    Circuit-Level Gateways = As another simplistic firewall type that is meant to quickly and easily approve or deny traffic without consuming significant computing resources, circuit-level gateways work by verifying the transmission control protocol (TCP) handshake. This TCP handshake check is designed to make sure that the session the packet is from is legitimate.While extremely resource-efficient, these firewalls do not check the packet itself. So, if a packet held malware, but had the right TCP handshake, it would pass right through. This is why circuit-level gateways are not enough to protect your business by themselves.
+    Circuit-Level Gateways = As another simplistic firewall type that is meant to quickly and easily approve or deny traffic without consuming significant computing resources, 
+    circuit-level gateways work by verifying the transmission control protocol (TCP) handshake. 
+    This TCP handshake check is designed to make sure that the session the packet is from is legitimate.
+    While extremely resource-efficient, 
+    these firewalls do not check the packet itself. 
+    So, if a packet held malware, but had the right TCP handshake, 
+    it would pass right through. 
+    This is why circuit-level gateways are not enough to protect your business by themselves.
 
 2. Which type of firewall considers the connection as a whole? Meaning, instead of looking at only individual packets, these firewalls look at whole streams of packets at one time.
 
   Answer:
   
-    Stateless firewalls are designed to protect networks based on static information such as source and destination. Whereas stateful firewalls filter packets based on the full context of a given network connection, stateless firewalls filter packets based on the individual packets themselves
+    Stateless firewalls are designed to protect networks based on static information such as source and destination. 
+    Whereas stateful firewalls filter packets based on the full context of a given network connection, 
+    stateless firewalls filter packets based on the individual packets themselves
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
   Answer:
   
-    A Proxy Server responds to input packets and blocks other packets.  A Proxy Server can be dedicated on a hardware device or as software. A Proxy Server acts as an entry point from one network to another on behalf of the user.  This allows for the entry of an internal system from the external network more difficult. Proxy Server Firewalls can mask the IP address and limit the different traffic types.  They are protocol-aware which provides security analysis
+    A Proxy Server responds to input packets and blocks other packets.
+    A Proxy Server can be dedicated on a hardware device or as software. A Proxy Server acts as an entry point from one network to another on behalf of the user.  
+    This allows for the entry of an internal system from the external network more difficult. 
+    Proxy Server Firewalls can mask the IP address and limit the different traffic types.
+    They are protocol-aware which provides security analysis
 
 
 4. Which type of firewall examines data within a packet as it progresses through a network interface by examining source and destination IP address, port number, and packet type- all without opening the packet to inspect its contents?
 
   Answer: 
   
-    packet filtering firewall. While a packet filtering firewall only examines an individual packet out of context, a stateful firewall is able to watch the traffic over a given connection, generally defined by the source and destination IP addresses, the ports being used, and the already existing network traffic`
+    Packet filtering firewall. 
+    While a packet filtering firewall only examines an individual packet out of context, 
+    a stateful firewall is able to watch the traffic over a given connection, 
+    generally defined by the source and destination IP addresses, 
+    the ports being used, 
+    and the already existing network traffic
 
 
 5. Which type of firewall filters based solely on source and destination MAC address?
 
   Answer:
   
-    `The MAC layer firewall, or what's known as the media access control layer firewall, operates within one of two sublayers within the second layer of the OSI model (the data link layer). ... This allows the firewall to determine whether to block or allow the packets to access the network.
+    `The MAC layer firewall, or what's known as the media access control layer firewall, 
+    operates within one of two sublayers within the second layer of the OSI model (the data link layer).
+    This allows the firewall to determine whether to block or allow the packets to access the network.
 
 
 
@@ -586,7 +653,9 @@ Answer the following:
 
     Answer: 
     
-        alert tcp $EXTERNAL_NET_PORTS -> $HOME_NET any. This is a Italian Spam campain. Trying to download a executable file.
+        alert tcp $EXTERNAL_NET_PORTS -> $HOME_NET any. 
+        This is a Italian Spam campain. 
+        Trying to download a executable file.
 
     ![attack](IMAGE/attack.png)
 
@@ -595,7 +664,10 @@ Answer the following:
 
     Answer: 
     
-            TROJAN EXE payload executable. Italian Spam Campain using JS/Nemucod downloader. Getting people to click on the download and get them in the sandbox.
+            TROJAN EXE payload executable. 
+            Italian Spam Campain using JS/Nemucod downloader. 
+            Getting people to click on the download and get them 
+            in the sandbox.
 
     ![attack purpose](IMAGE/attackpurpose.png)
 

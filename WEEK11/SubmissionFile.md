@@ -483,7 +483,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
    Answer: 
    
-        Good for detecting suspicious traffic and prone to false alerts.So this will be a anomaly-based IDS.
+        Good for detecting suspicious traffic and prone to false alerts. So this will be a anomaly-based IDS.
 
 #### Defense in Depth
 
@@ -499,7 +499,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
         Answer: 
         
-            Anti virus in an application. So application layer.
+            Anti virus in an application. So Application layer.
 
     3. A criminal successfully gains access to HR’s database.
 
@@ -517,7 +517,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
         Answer:
         
-            Network
+            Network service prevention
 
     6. Data is classified at the wrong classification level.
 
@@ -529,7 +529,13 @@ Now, we will work on another lab. Before you start, complete the following revie
 
         Answer:
         
-            Perimeter
+            Perimeter getting through the firewall.
+
+
+            
+        ![Defence in depth](IMAGE/defenceindepth.png)
+
+        <br> 
 
 2. Name one method of protecting data-at-rest from being readable on hard drive.
 
@@ -577,31 +583,31 @@ Now, we will work on another lab. Before you start, complete the following revie
 
   Answer:
   
-    Circuit-Level Gateways = As another simplistic firewall type that is meant to quickly and easily approve or deny traffic without consuming significant computing resources, 
-    circuit-level gateways work by verifying the transmission control protocol (TCP) handshake. 
+    (Circuit-Level Gateways) = As another simplistic firewall type that is meant to quickly and easily approve or deny traffic without consuming significant computing resources, 
+    `circuit-level gateways work by verifying the transmission control protocol (TCP) handshake.` 
     This TCP handshake check is designed to make sure that the session the packet is from is legitimate.
     While extremely resource-efficient, 
     these firewalls do not check the packet itself. 
     So, if a packet held malware, but had the right TCP handshake, 
     it would pass right through. 
-    This is why circuit-level gateways are not enough to protect your business by themselves.
+    This is why (circuit-level gateways) are not enough to protect your business by themselves.
 
 2. Which type of firewall considers the connection as a whole? Meaning, instead of looking at only individual packets, these firewalls look at whole streams of packets at one time.
 
   Answer:
   
-    Stateless firewalls are designed to protect networks based on static information such as source and destination. 
+    (Stateless firewalls) are designed to protect networks based on static information such as source and destination. 
     Whereas stateful firewalls filter packets based on the full context of a given network connection, 
-    stateless firewalls filter packets based on the individual packets themselves
+    `(stateless firewalls filter packets)` based on the individual packets themselves
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
   Answer:
   
-    A Proxy Server responds to input packets and blocks other packets.
+    A `(Proxy Server)` responds to input packets and blocks other packets.
     A Proxy Server can be dedicated on a hardware device or as software. A Proxy Server acts as an entry point from one network to another on behalf of the user.  
     This allows for the entry of an internal system from the external network more difficult. 
-    Proxy Server Firewalls can mask the IP address and limit the different traffic types.
+    `(Proxy Server Firewalls)` can mask the IP address and limit the different traffic types.
     They are protocol-aware which provides security analysis
 
 
@@ -609,7 +615,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
   Answer: 
   
-    Packet filtering firewall. 
+    `Packet filtering firewall.` 
     While a packet filtering firewall only examines an individual packet out of context, 
     a stateful firewall is able to watch the traffic over a given connection, 
     generally defined by the source and destination IP addresses, 
@@ -621,7 +627,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
   Answer:
   
-    `The MAC layer firewall, or what's known as the media access control layer firewall, 
+    `The MAC layer firewall,` or what's known as the `media access control layer firewall,` 
     operates within one of two sublayers within the second layer of the OSI model (the data link layer).
     This allows the firewall to determine whether to block or allow the packets to access the network.
 
@@ -654,7 +660,7 @@ Answer the following:
     Answer: 
     
         alert tcp $EXTERNAL_NET_PORTS -> $HOME_NET any. 
-        This is a Italian Spam campain. 
+        This is a Italian Spam campain using js nemucod. 
         Trying to download a executable file.
 
     ![attack](IMAGE/attack.png)
@@ -667,7 +673,7 @@ Answer the following:
             TROJAN EXE payload executable. 
             Italian Spam Campain using JS/Nemucod downloader. 
             Getting people to click on the download and get them 
-            in the sandbox.
+            in the sandbox.This could be a ransomware attack for the decryption tools. 
 
     ![attack purpose](IMAGE/attackpurpose.png)
 
@@ -677,10 +683,10 @@ Answer the following:
 | --- | --- | --- | 
 | **Reconnaissance** |  How did they attacker locate the victim? | The victims were located using emails, a campain was sent out.
 | **Weaponization** |  What was it that was downloaded?| In the email they open the zip file and bam. inside the download were 3 files. WScript,MSXML2.XMLHTTP and ADODB. The malware used the ODDOB to open the decoy PDF file. 
-| **Delivery** |    How was it downloaded?| This would save an executable temp file %TEMP% using a decoy to make them open it again in the browser. The EXE file will run in the background. This came as a email and user would open it and because it was a executable javascript.
+| **Delivery** |    How was it downloaded?| This would save an executable temp file %TEMP% using a decoy to make them open it again in the browser. The EXE file will run in the background. This came as a email and user would open it and because it was a executable javascript. This was installed using a wordpress page.
 | **Exploitation** |  What does the exploit do?| Runs in the background. Using WScript.Shell ActiveX control.
 | **Installation** | How is the exploit installed?| Javascript that loads a simple EXE file. Making user believe the are looking at a real invoice. 
-| **Command & Control (C2)** | How does the attacker gain control of the remote machine?| THE MALWARE USES ADODB.STREAM ACTIVEX CONTROL TO OPEN THE PDF FILE.
+| **Command & Control (C2)** | How does the attacker gain control of the remote machine?| Connects to the hostin order to succeed.
 | **Actions on Objectives** | What does the software that the attacker sent do to complete it's tasks?| After reboot a phony home starts. 
 
 
@@ -704,9 +710,12 @@ Answer the following:
     Answer: 
     
         Certego
+
         https://youtu.be/g0yXmQx89x4
 
+        https://www.2-spyware.com/remove-js-nemucod.html 
 
+    ![nemucod](IMAGE/nemucod.png)
 ---
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

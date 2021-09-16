@@ -686,8 +686,8 @@ Answer the following:
 | **Delivery** |    How was it downloaded?| This would save an executable temp file %TEMP% using a decoy to make them open it again in the browser. The EXE file will run in the background. This came as a email and user would open it and because it was a executable javascript. This was installed using a wordpress page.
 | **Exploitation** |  What does the exploit do?| Runs in the background. Using WScript.Shell ActiveX control.
 | **Installation** | How is the exploit installed?| Javascript that loads a simple EXE file. Making user believe the are looking at a real invoice. 
-| **Command & Control (C2)** | How does the attacker gain control of the remote machine?| Connects to the hostin order to succeed.
-| **Actions on Objectives** | What does the software that the attacker sent do to complete it's tasks?| After reboot a phony home starts. 
+| **Command & Control (C2)** | How does the attacker gain control of the remote machine?| Connects to the host remotely in order to succeed.
+| **Actions on Objectives** | What does the software that the attacker sent do to complete it's tasks?| After reboot a phony home starts. It connects to a remote host to succeed its activities.it may have a few things goig on tho. They can monitor or alter your system settings. your pc will run slow, programs crash, window freezes. 
 
 
     Answer:    

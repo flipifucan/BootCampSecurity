@@ -39,7 +39,7 @@ Optional message body. The message body part is optional for an HTTP
 A status line.
 Zero or more headers.
 An empty line.
-Optional message body.
+Optional message body but usually needed.
 Reference:
 https://www.tutorialspoint.com/http/http_responses.htm 
 

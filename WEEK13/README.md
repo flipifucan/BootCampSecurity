@@ -61,13 +61,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
         Monitors Logs sends them to elkstack for proccessing or indexing. 
 
         
-![FileBeat](IMAGE/FileBeat-Monitoring.png)
+![FileBeat](IMAGE/filebeat.png)
 
 - _TODO: What does Metricbeat record?_
 
         Monitors CPU if it gets high you know you have an issue like too many log in attempts. 
 
-![FileBeat](IMAGE/MetricBeat-Monitoring.png)
+![FileBeat](IMAGE/metricbeat.png)
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.

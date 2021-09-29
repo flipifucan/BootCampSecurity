@@ -96,12 +96,13 @@ Machines within the network can only be accessed by `Jump-Box Provisioner`.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name        | Publicly Accessible | Allowed IP Addresses |
-|-------------|---------------------|----------------------|
-| Jump Box    | Yes  port 22 TCP    | 10.0.0.4 69.8.223.334|
-| Elk-Server  | No  port 5601 ANY  | 10.1.0.5 69.8.223.334|
-| Web-1       | No   port 22 TCP    | 10.0.0.5             |
-| Web-2       | No   port 22 TCP    | 10.0.0.7             |
+| Name        | Publicly Accessible | Allowed IP Addresses    |
+|-------------|---------------------|-------------------------|
+| Jump Box    | Yes  port 22 TCP    | 10.0.0.4 20.106.143.99  |
+| Elk-Server  | No  port 5601 ANY   | 10.1.0.5 20.80.180.39   |
+| Web-1       | No   port 22 TCP    | 10.0.0.5 20.85.215.4    |
+| Web-2       | No   port 22 TCP    | 10.0.0.7 20.85.215.4    |
+| Web-3       | No   port 22 TCP    | 10.0.0.6 Out of Service |
 
 ### Elk Configuration
 

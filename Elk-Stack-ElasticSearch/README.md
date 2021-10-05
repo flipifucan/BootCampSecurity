@@ -1,5 +1,11 @@
 ## Automated ELK Stack Deployment by Phillip Snell October 1, 2021
 
+## Welcome to Cloud Security
+
+## My Security Journey:
+
+![Cloud Security](IMAGE/Cloud-security.jpeg)
+
 The files in this repository were used to configure the network depicted below.
 
 
@@ -12,7 +18,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
         Files have been edited and updated.
             Click On The Links Below.
 
-  [Filebeat-Config](filebeat-configuration.yml)
+  [Filebeat-Config](filebeat-configuration.yml) 
 
   [Filebeat-Playbook](filebeat-playbook.yml)
 
@@ -78,13 +84,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 IP address of local host is temporary and changes at times.
 
-| Name     | Function          | IP Address  | Operating System |
-|----------|-------------------|------------ |------------------|
-|Phillip   | Local Host        | 69.8.223.334| MacOs            |
-|Elk Server| Monitoring        | 10.1.0.5    | Linux Ubuntu 18.4|
-|Jump Box  | Gateway           | 10.0.0.4    | Linux Ubuntu 18.4|
-|Web-1     | DVWA Server       | 10.0.0.5    | Linux Ubuntu 18.4|
-|Web-2     | DVWA Server       | 10.0.0.7    | Linux Ubuntu 18.4|
+| Name     | Function          | IP Address  | Operating System  |
+|----------|-------------------|------------ |------------------ |
+|Phillip   | Local Host        | 69.8.223.334| MacOs             |
+|Elk Server| Monitoring        | 10.1.0.5    | Linux Ubuntu 18.4 |
+|Jump Box  | Gateway           | 10.0.0.4    | Linux Ubuntu 18.4 |
+|Web-1     | DVWA Server       | 10.0.0.5    | Linux Ubuntu 18.4 |
+|Web-2     | DVWA Server       | 10.0.0.7    | Linux Ubuntu 18.4 |
 
 ### Access Policies
 
@@ -96,7 +102,7 @@ Only the **Jump-Box Provisioner** machine can accept connections from the Intern
 
 Machines within the network can only be accessed by **Jump-Box Provisioner**.
           
-          Jump-box private IP: 10.0.0.4 
+          Jump-box private IP: 10.0.0.4 | public IP: 20.106.143.99 
 
 A summary of the access policies in place can be found in the table below.
 
@@ -112,12 +118,13 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-        Automation is the future and if you can free up admins for other work, moving forward, the furture will look brighter. Automating daily tasks is best practice to elliminate errors also. By using the same playbooks updating and installing web servers to the network will be much faster and easier.
+        Automation is the future and if you can free up admins for other work, moving forward, the future will look brighter. Automating daily tasks is best practice to eliminate errors also. By using the same playbooks updating and installing web servers to the network will be much faster and easier.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ... Install Docker add containers as needed. **intall docker .io, python3, docker module**
-- ... Install Ansible configure playbooks and config files. **configure elk server and memory increase. download elk docker container and configure it.** 
+- ...  **Install docker .io, install pip3 python3, docker python module**
+ 
+
+![Docker ps output](IMAGE/install-elk.png)
 
 The following screenshot displays the result of running **docker ps** after successfully configuring the ELK instance.
 
@@ -148,11 +155,6 @@ These Beats allow us to collect the following information from each machine:
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
-
-SSH into the control node and follow the steps below:
-- Copy the` filebeat-playbook.yml and metricbeat-playbook.yml` file to` a nano filebeat-playbook.yml and metricbeat-playbook.yml in my /etc/ansible/files directory`.
-- Update the` filebeat-config.yml and metricbeat-config.yml` file to include... `IP address of Elk server 10.1.0.51 on specific ports`
-- Run the playbook, and navigate to` Kibana (http://20.80.180.39:5601/app/kibana)` to check that the installation worked as expected.
 
 ### Commands I used to run the Ansible playbooks and update files.
 

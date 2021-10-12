@@ -143,11 +143,10 @@ When complete, submit the file on BCS.
 ![etc hosts file](IMAGE/etchosts_file.png)
 ![etc hosts file cmd line](IMAGE/etchosts_file_cmd.png)
 
-    To avoid command injection developers should not allow operating system commands, instead should use API key provided by the framework they are using. Don't just let anyone type in the date command and be able to modify it from there. Instead, developers should use a more complicated framework to get the date. Lack of input and output validation is a huge problem in command injection. Whitelisting good values will help a lot. 
-
-
-
-
+    To avoid command injection developers should not allow operating system commands, instead should use API key provided by the framework they are using. Don't just let anyone type in the date command and be able to modify it from there. Instead, developers should use a more complicated framework to get the date. Lack of input and output validation is a huge problem in command injection. Whitelisting good values will help a lot.
+     
+    
+:smiley:
 ### Web Application 2: *A Brute Force to Be Reckoned With*
 
 1. Complete the following steps to set up the activity. 
@@ -207,10 +206,7 @@ When complete, submit the file on BCS.
 
 
     Making passwords long and strong is a direction to go at first. Preventing brute force attacks helps by using tools and techniques available to you. Do not use typical password fraises like dog names or birthdays. Use long and destructive words. Use different passwords for different sites. Use numbers and special characters as much as possible. Use random strings not something you will find in a dictionary. Use tools to limit login attempts. My favorite is implementing 2FA all around. Oh and last but not least CAPTCHA telling if you are human or not! Lol.  
-
-
-
-
+:smiley:
 ### Web Application 3: *Where's the BeEF?*
 
 1. Complete the following to set up the activity. 

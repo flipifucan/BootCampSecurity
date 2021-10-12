@@ -32,7 +32,7 @@ Answer the following questions about the HTTP request and response process.
 
 ### Which part of an HTTP request is optional?
 
-        Optional message body. The message body part is optional for an HTTP        request.
+        Optional message body. The message body part is optional for an HTTP request.
 
 ### What are the three parts of an HTTP response?
 
@@ -51,7 +51,7 @@ Answer the following questions about the HTTP request and response process.
 
 ### What are the two most common request methods that a security professional will encounter?
 
-        GET and POST are by far the most common methods. Case sensitive also fyi.       Most Dev'sdo not know or consider the implication of these two security     features in their code. 
+        GET and POST are by far the most common methods. Case sensitive also fyi.Most Dev'sdo not know or consider the implication of these two security features in their code. 
         Reference:
         https://owasp.org/www-project-web-security-testing-guide/latest/        4-Web_Application_Security_Testing/     02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods
 
@@ -110,7 +110,7 @@ HTTP/1.1 200 OK
 Content-type: text/html
 Set-Cookie: cart=Bob
 
-        The Set-Cookie: is a response header and used to send cookies from the server to the user agent.
+        The Set-Cookie: is a response header and used to send cookies from the server to the user agent. HTTP/1.1 200 OK
 
 
 Which request header will continue the client's session?
@@ -533,10 +533,17 @@ Finally, write a curl command using the same --cookie ryancookies.txt option, bu
 
 Question: What happens this time?
 
-                Looks like I was able to log in
+                Looks like I was NOT able to log in. I also notice that when I log in as Amanda I have access to more featuers than Ryan has like Amanda can view Users but Ryan cannot. 
 
 
 
-[log in as Ryan](IMAGE/loginasryan)
+
+![log in as Ryan](IMAGE/not_able_to_login.png)
+
+[code for user log in as Ryan](IMAGE/loginasryan)
+
+Comparing Ryan to Amanda's Dashboards. 
+
+![Log in as Amanda](IMAGE/login_amanda.png)
 
 

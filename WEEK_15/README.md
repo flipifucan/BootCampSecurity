@@ -324,6 +324,16 @@ When complete, submit the file on BCS.
     
 6. **Deliverable**: Take a screen shot confirming that this exploit was successfully executed and provide 2-3 sentences outlining mitigation strategies. 
 
+![Pretty Theft](IMAGE/pretty_theft.png)
+
+![fake log in to FB](IMAGE/fake_password_FB.png)
+
+![Fake Notification](IMAGE/fake_notification.png)
+
+![clicked_button](IMAGE/clicked_button.png)
+
+![API's](IMAGE/API's.png)
+
 ---
 
 © 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

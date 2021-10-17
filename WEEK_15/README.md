@@ -334,6 +334,8 @@ When complete, submit the file on BCS.
 
 ![API's](IMAGE/API's.png)
 
+    One of the most effective ways to prevent OS Command Injection is to implement platform APIs to provide the functionality instead of calling out directly to the underlying Operating System. Failing that, strong input validation methods must be implemented
+
 ---
 
 © 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

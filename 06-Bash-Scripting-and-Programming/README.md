@@ -1,8 +1,3 @@
-## Week 6 Homework Submission File: Advanced Bash - Owning the System
-
-Please edit this file by adding the solution commands on the line below the prompt. 
-
-Save and submit the completed file for your homework submission.
 
 **Step 1: Shadow People** 
 
@@ -92,8 +87,6 @@ Save and submit the completed file for your homework submission.
 this is with --show way cool.
 
 ![descprition](IMAGE/waycool.png)
-
-I know it looks like a typo but I ran it again as you can see with shadow not shaow lol.
 
 ---
 

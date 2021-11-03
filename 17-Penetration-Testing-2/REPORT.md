@@ -14,17 +14,20 @@ identified on Hans’ desktop. When performing the attacks, GoodSecurity was abl
 2.0	Findings
 
 Machine IP:
+                    
+    192.168.0.20
 
-192.168.0.20
+Hostname: 
 
-Hostname:
+    MSEDGEWIN10
 
-MSEDGEWIN10
+Vulnerability Exploited: 
 
-Vulnerability Exploited: Icecast HTTP Header Buffer Overflow
-                         8000/tcp open http icecast streaming media server
+        Icecast HTTP Header Buffer Overflow
+        8000/tcp open http icecast streaming media server
+        exploit/windows/http/icecast_header
 
-exploit/windows/http/icecast_header
+
 
 Vulnerability Explanation:
     
@@ -101,7 +104,7 @@ This screen shot above verifies the victims machine has the corresponding files.
 
 3.0	What recommendations would you give to GoodCorp?
 
-In this type of event I would start with education of my staff to make sure no subordinary files get loaded on any machines. Keeping a good house keeping policy helps harden any system. Updating software and firmware annually will harden the internal structure of your network. Creating strong passwords is attack number one, using two factor authentication is my best recommendation for any new network build or install. 
+`In this type of event I would start with education of my staff to make sure no subordinary files get loaded on any machines. Keeping a good house keeping policy helps harden any system. Updating software and firmware annually will harden the internal structure of your network. Creating strong passwords is attack number one, using two factor authentication is my best recommendation for any new network build or install.` 
 
 
 Having backups and updating all the software and firmware will keep hardening the system. 

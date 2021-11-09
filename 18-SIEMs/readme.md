@@ -22,15 +22,13 @@ The time it took to recover from this attack was 9 hours.`
 
 **Background:**  Due to the frequency of attacks, your manager needs to be sure that sensitive customer data on their servers is not vulnerable. Since Vandalay uses Nessus vulnerability scanners, you have pulled the last 24 hours of scans to see if there are any critical vulnerabilities.
 
-Create a report determining how many critical vulnerabilities exist on the customer data server. Then, build an alert to notify your team if a critical vulnerability reappears on this server.
-
-   In the table below we have found 49 severity vulnerabilities from the input data we used. Information that was given was the destination ip 10.11.36.23 and we set the severity to critical.
+`In the table below we have found 49 severity vulnerabilities from the input data we used. Information that was given was the destination ip 10.11.36.23 and we set the severity to critical.`
 
    ![stats critical](IMAGE/stats_critical.png)
       
 3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
 
-Below are alerts we built to monitor every day to see if this server has any critical vulnerabilities. If a vulnerability exists we have this set up to send an email alert to soc@vandalay.com  
+`Below are alerts we built to monitor every day to see if this server has any critical vulnerabilities. If a vulnerability exists we have this set up to send an email alert to soc@vandalay.com`  
 
 ![Alert Edit](IMAGE/alert_edit.png)
 ![Alert Form](IMAGE/alert_form.png)

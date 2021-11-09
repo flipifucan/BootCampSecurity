@@ -42,8 +42,8 @@ The time it took to recover from this attack was 9 hours.`
 
 Analyze administrator logs that document a brute force attack. Then, create a baseline of the ordinary amount of administrator bad logins and determine a threshold to indicate if a brute force attack is occurring.
 
-Below we built charts to look at and monitor on a hour bases the amount of failed log in attempts. As you can see on the graph that between 8:00AM and 2:00PM there was a high spike in failed log in attempts. We set the email alert up to be sent for every 30 failed attempts to soc@vandalay.com 
-As you see in the pattern chart that about half of the attempts were bad user names and passwords.
+`Below we built charts to look at and monitor on a hour bases the amount of failed log in attempts. As you can see on the graph that between 8:00AM and 2:00PM there was a high spike in failed log in attempts. We set the email alert up to be sent for every 30 failed attempts to soc@vandalay.com 
+As you see in the pattern chart that about half of the attempts were bad user names and passwords.`
 
 ![Brute Force](IMAGE/brute_force.png)
 ![Alert Threshold](IMAGE/alert_threshold.png)

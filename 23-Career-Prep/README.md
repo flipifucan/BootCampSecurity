@@ -1,6 +1,8 @@
 ## Resume
 
+- ##### [Resume:](IMAGE/PHILLIP_SNELL_Resume.docx)
 
+- ##### [Resume:](IMAGE/PHILLIP_SNELL_Resume.PDF)
 
 - ##### LinkedIn www.linkedin.com/in/phillip-snell
 

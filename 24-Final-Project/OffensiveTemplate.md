@@ -76,8 +76,6 @@ After finding the user names we ran these thru hydra to find passwords.
 
 ##### Using command: mysql -u root -p wordpress we were able to find databases and tables with access to flags 3 and 4.
 
-![Flag](IMAGE/DB-dump-4.png)
-
 ![Flag](IMAGE/DB-dump-3.png)
 
 ##### We used code: show databases; to view list of databases. Then we choose: use wordpress database. then to view tables we ran: show tables; Then from there we wanted to view tables for insight and ran: select * from wp_posts and found flags 3 and 4. We ran a few other tables to see if other flags were there. 

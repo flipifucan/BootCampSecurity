@@ -84,7 +84,7 @@ After finding the user names we ran these thru hydra to find passwords.
 
 ![Flag](IMAGE/DB-dump-1.png)
 
-##### This is where we found the password.
+##### This is where we found the password. We ran: nano wp-config.php to open this file.
 
 ![Flag](IMAGE/DB-password.png)
 

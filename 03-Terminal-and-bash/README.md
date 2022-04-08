@@ -30,3 +30,7 @@ This is screen shots of how to for terminal and bash class week 3.
 <br>
 
 ![chmod files](IMAGE/chmod_files.png)
+
+<br>
+
+![sh file to get date and time](IMAGE/sh_roulette_final.png)
